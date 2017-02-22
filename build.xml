@@ -25,7 +25,7 @@
    <classpath refid="classpath.base"/>
   </javac>
  </target>
-
+ 
  <target name="build" depends="compile">
   <mkdir dir="${test.build.dir}"/>
   <javac srcdir="${test.src.dir}" destdir="${test.build.dir}" includeantruntime="false">
@@ -51,7 +51,7 @@
   </batchtest>
  </junit>
  </target>
-
+ <mkdir dir ="/home/travis/build/bernardwang2/Travis/src" />
  <!-- delete all class files -->
  <!-- To run this: use "ant clean" -->
  <target name="clean">
